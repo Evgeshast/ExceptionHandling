@@ -17,6 +17,8 @@ namespace ExceptionHandlingModule
             {
                 //  Console.WriteLine(ex.Message);
             }
+            
+            // use Console.ReadKey() to stop the thread
         }
 
         public static void WriteFirstStringSymbol(string line)// let's simplify the name as WriteFirstSymbol
