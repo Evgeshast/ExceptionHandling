@@ -8,7 +8,7 @@ namespace ExceptionHandlingModule
         static void Main(string[] args)
         {
             Console.WriteLine("Input string");
-            var line = Console.ReadLine();
+            var line = Console.ReadLine(); //use explicit type for variable 'string' instead of 'var'
             try
             {
                 WriteFirstStringSymbol(line);
@@ -18,11 +18,11 @@ namespace ExceptionHandlingModule
             }
         }
 
-        public static void WriteFirstStringSymbol(string line)
+        public static void WriteFirstStringSymbol(string line)// let's simplify the name as WriteFirstSymbol
         {
-            if (line == string.Empty)
+            if (line == string.Empty) // use string.IsNullOrEmpty() to check 'line'
             {
-                throw new EmptyStringException();
+                throw new EmptyStringException(); // pass exception message
             }
             else
             {
