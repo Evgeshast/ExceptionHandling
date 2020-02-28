@@ -15,6 +15,7 @@ namespace ExceptionHandlingModule
             }
             catch (EmptyStringException ex)
             {
+                //  Console.WriteLine(ex.Message);
             }
         }
 
