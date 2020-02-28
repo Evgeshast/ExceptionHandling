@@ -11,7 +11,7 @@ namespace ExceptionHandlingModule
           //  Console.WriteLine("String is empty");
         //}
         
-        public EmptyStringException() : base ()
+        public EmptyStringException()
 	{ }
         
         public EmptyStringException(string message) : base(message)
