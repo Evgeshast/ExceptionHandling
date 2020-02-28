@@ -6,9 +6,12 @@ namespace ExceptionHandlingModule
 {
     public class EmptyStringException : Exception
     {
-        public EmptyStringException()
-        {
-            Console.WriteLine("String is empty");
-        }
+        //public EmptyStringException()
+        //{
+          //  Console.WriteLine("String is empty");
+        //}
+        
+        public EmptyStringException(string message) : base(message)
+        { }
     }
 }
