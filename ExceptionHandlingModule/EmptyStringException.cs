@@ -12,7 +12,7 @@ namespace ExceptionHandlingModule
         //}
         
         public EmptyStringException() : base ()
-		{ }
+	{ }
         
         public EmptyStringException(string message) : base(message)
         { }
