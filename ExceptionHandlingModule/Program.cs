@@ -8,21 +8,22 @@ namespace ExceptionHandlingModule
         static void Main(string[] args)
         {
             Console.WriteLine("Input string");
-            var line = Console.ReadLine();
+            string line = Console.ReadLine();
             try
             {
-                WriteFirstStringSymbol(line);
+                WriteFirstSymbol(line);
             }
             catch (EmptyStringException ex)
             {
             }
+            Console.ReadKey();
         }
 
-        public static void WriteFirstStringSymbol(string line)
+        public static void WriteFirstSymbol(string line)
         {
-            if (line == string.Empty)
+            if (string.IsNullOrEmpty(line))
             {
-                throw new EmptyStringException();
+                throw new EmptyStringException("String is empty");
             }
             else
             {
